@@ -6,13 +6,13 @@
         <input type="file" id="files" name="file" onchange="readBlob()"/>
     </div>
     <br>
-        <textarea rows="20" cols="100" id="numb"></textarea>
+        <textarea rows="20" cols="100" id="xmlfile"></textarea>
 
         <div style="margin-top: 10px;margin-bottom: 10px">
           <button  type="button" onclick="myFunction()">XML TO JSON</button>
         </div>
 
-        <textarea id="demo"  rows="20" cols="100"></textarea>
+        <textarea id="json"  rows="20" cols="100"></textarea>
 </div>
 
 <script>
@@ -33,7 +33,7 @@
       
       reader.onloadend = function(evt) {
         if (evt.target.readyState == FileReader.DONE) {
-          document.getElementById('numb').textContent = evt.target.result;            
+          document.getElementById('xmlfile').textContent = evt.target.result;            
         }
       };
   
@@ -46,7 +46,7 @@ function myFunction() {
   var x, xml;
 
   
-  x = document.getElementById("numb").value;
+  x = document.getElementById("xmlfile").value;
   xml = x
   
   var xmlDOM = new DOMParser().parseFromString(xml, 'text/xml');
@@ -105,7 +105,7 @@ function xmlToJson(xml) {
                 });
             }
   console.log(obj)
-  document.getElementById("demo").innerHTML = JSON.stringify(obj)
+  document.getElementById("json").innerHTML = JSON.stringify(obj)
   return obj;
   
 }
