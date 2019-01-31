@@ -10,9 +10,11 @@ weather
 input ในฝั่ง html สามารถกรอกค่าหรือ นำเข้าข้อมูลเป็นไฟล์ได้ (text/xml)
 ผลลัพธ์จะออกบนหน้าเว็บและทาง console ใน developer tool ของ browser 
 แหล่งอ้างอิง
-HTML DOM
+
+
 >https://www.w3schools.com/js/js_htmldom_document.asp
-INPUT&READFILE
+HTML DOM
 >https://www.html5rocks.com/en/tutorials/file/dndfiles/
-xmlToJson
+INPUT&READFILE
 https://gist.github.com/chinchang/8106a82c56ad007e27b1
+xmlToJson
